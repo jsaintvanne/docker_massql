@@ -1,6 +1,13 @@
-#README
+# README
 
 ## Ligne de commande pour lancer le docker
+
+Commencer en créant deux dossiers :
+```
+mkdir data
+mkdir output
+```
+Puis lancer la ligne de commande suivante: 
 
 `docker run -v $(pwd)/data:/data -v $(pwd)/output:/output tmp /data/MIX_ACs.mzML "QUERY scaninfo(MS1DATA)" --output_file /output/results.tsv`
 
